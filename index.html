@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <header class="bg-blue-600 text-white p-6 text-center">
+        <h1 class="text-3xl font-bold">API Documentation</h1>
+    </header>
+
+    <main class="p-6 space-y-6">
+        <!-- Endpoint Card -->
+        <div class="bg-white rounded-xl shadow p-6 space-y-4">
+            <h2 class="text-xl font-semibold">Register</h2>
+            <p><span class="font-semibold">Method:</span> <span class="text-green-600">POST</span></p>
+            <p><span class="font-semibold">Endpoint:</span> <span class="text-blue-600">/api/register</span></p>
+
+            <!-- Header Section -->
+            <div>
+                <h3 class="font-semibold mb-1">Headers:</h3>
+                <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+Content-Type: application/json
+        </pre>
+            </div>
+
+            <div>
+                <h3 class="font-semibold mb-1">Request Body:</h3>
+                <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "name":"mohammed",
+    "email":"moqs1dd@gmail.com",
+    "password":"123123123",
+    "password_confirmation":"123123123"
+}
+        </pre>
+            </div>
+
+            <div>
+                <h3 class="font-semibold mb-1">Response Body:</h3>
+                <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "id": 7,
+    "name": "mohammed",
+    "email": "moqs1dd@gmail.com"
+}
+        </pre>
+            </div>
+        </div>
+        <!-- Endpoint Card -->
+         <!-- Endpoint Card -->
+<div class="bg-white rounded-xl shadow p-6 space-y-4">
+    <h2 class="text-xl font-semibold">Login</h2>
+    <p><span class="font-semibold">Method:</span> <span class="text-green-600">POST</span></p>
+    <p><span class="font-semibold">Endpoint:</span> <span class="text-blue-600">/api/login</span></p>
+
+    <!-- Header Section -->
+    <div>
+        <h3 class="font-semibold mb-1">Headers:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+Content-Type: application/json
+        </pre>
+    </div>
+
+    <div>
+        <h3 class="font-semibold mb-1">Request Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "email":"mo@gmail.com",
+    "password":"123123123"
+}
+        </pre>
+    </div>
+
+    <div>
+        <h3 class="font-semibold mb-1">Response Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "success": true,
+    "message": "login successful",
+    "data": {
+        "user": {
+            "id": 2,
+            "name": "mohammed",
+            "email": "mo@gmail.com"
+        },
+        "token": "6|8NPoORJOhtXdHBSsiYLLXwqNID6UY2U04aSIWlvRa5115dc2"
+    }
+}
+        </pre>
+    </div>
+</div>
+<!-- Endpoint Card -->
+ <!-- Endpoint Card -->
+<div class="bg-white rounded-xl shadow p-6 space-y-4">
+    <h2 class="text-xl font-semibold">Logout</h2>
+    <p><span class="font-semibold">Method:</span> <span class="text-green-600">POST</span></p>
+    <p><span class="font-semibold">Endpoint:</span> <span class="text-blue-600">/api/logout</span></p>
+
+    <!-- Header Section -->
+    <div>
+        <h3 class="font-semibold mb-1">Headers:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+Authorization: Bearer 6|8NPoORJOhtXdHBSsiYLLXwqNID6UY2U04aSIWlvRa5115dc2
+Content-Type: application/json
+        </pre>
+    </div>
+
+    <div>
+        <h3 class="font-semibold mb-1">Request Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "email":"mo@gmail.com",
+    "password":"123123123"
+}
+        </pre>
+    </div>
+
+    <div>
+        <h3 class="font-semibold mb-1">Response Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "success": true,
+    "message": "logged out successfully.",
+    "data": []
+}
+        </pre>
+    </div>
+</div>
+<!-- Endpoint Card -->
+
+<hr class="border-t border-black ">
+
+
+<!-- Endpoint Card -->
+<div class="bg-white rounded-xl shadow p-6 space-y-4">
+    <h2 class="text-xl font-semibold">Search case index</h2>
+    <p><span class="font-semibold">Method:</span> <span class="text-green-600">GET</span></p>
+    <p><span class="font-semibold">Endpoint:</span> <span class="text-blue-600">/api/search-case</span></p>
+
+    <!-- Header Section -->
+    <div>
+        <h3 class="font-semibold mb-1">Headers:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+Content-Type: application/json
+        </pre>
+    </div>
+
+    <div>
+        <h3 class="font-semibold mb-1">Request Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+
+        </pre>
+    </div>
+
+    <div>
+        <h3 class="font-semibold mb-1">Response Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "data": [
+        {
+            "title": "search case 1",
+            "description": "this is a test description for case 1",
+            "status": "open"
+        },
+        {
+            "title": "search case 2",
+            "description": "this is a test description for case 2",
+            "status": "closed"
+        },
+        {
+            "title": "search case 3",
+            "description": "this is a test description for case 3",
+            "status": "in_progress"
+        },
+        {
+            "title": "search case 4",
+            "description": "this is a test description for case 4",
+            "status": "on_hold"
+        },
+        {
+            "title": "search case 5",
+            "description": "this is a test description for case 5",
+            "status": "closed"
+        }
+    ]
+}
+        </pre>
+    </div>
+</div>
+<!-- Endpoint Card -->
+ <!-- Endpoint Card -->
+<div class="bg-white rounded-xl shadow p-6 space-y-4">
+    <h2 class="text-xl font-semibold">Create new search case</h2>
+    <p><span class="font-semibold">Method:</span> <span class="text-green-600">POST</span></p>
+    <p><span class="font-semibold">Endpoint:</span> <span class="text-blue-600">/api/search-case</span></p>
+
+    <!-- Header Section -->
+    <div>
+        <h3 class="font-semibold mb-1">Headers:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+Authorization: Bearer 6|8NPoORJOhtXdHBSsiYLLXwqNID6UY2U04aSIWlvRa5115dc2
+Content-Type: application/json
+        </pre>
+    </div>
+
+    <div>
+        <h3 class="font-semibold mb-1">Request Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "title":"search case x",
+    "description":"test info"
+}
+        </pre>
+    </div>
+
+    <div>
+        <h3 class="font-semibold mb-1">Response Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "success": true,
+    "message": "Search case created successfully.",
+    "data": []
+}
+        </pre>
+    </div>
+</div>
+<!-- Endpoint Card -->
+    </main>
+
+</body>
+
+</html>
