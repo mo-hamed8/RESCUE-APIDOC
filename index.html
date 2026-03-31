@@ -423,13 +423,13 @@ Content-Type: application/json
     <span class="font-semibold">pending</span>, <span class="font-semibold">confirmed</span>, or <span class="font-semibold">rejected</span>.
 </p>
     <p><span class="font-semibold">Method:</span> <span class="text-green-600">POST</span></p>
-    <p><span class="font-semibold">Endpoint:</span> <span class="text-blue-600">/api/close-suspicion</span></p>
+    <p><span class="font-semibold">Endpoint:</span> <span class="text-blue-600">/api/closeSuspicion</span></p>
 
     <!-- Header Section -->
     <div>
         <h3 class="font-semibold mb-1">Headers:</h3>
         <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
-Authorization: Bearer YOUR_TOKEN
+Authorization: Bearer 6|8NPoORJOhtXdHBSsiYLLXwqNID6UY2U04aSIWlvRa5115dc2
 Content-Type: application/json
         </pre>
     </div>
@@ -452,6 +452,55 @@ Content-Type: application/json
 {
     "success": true,
     "message": "status updated successfully."
+}
+        </pre>
+    </div>
+</div>
+<!-- Endpoint Card -->
+         <!-- Endpoint Card -->
+<div class="bg-white rounded-xl shadow p-6 space-y-4">
+    <h2 class="text-xl font-semibold">find user</h2>
+    <p class="text-sm text-gray-700">
+    <b>NOTE: </b>
+    At least one of the fields <span class="font-semibold">email</span> or 
+    <span class="font-semibold">phone</span> must be provided. You can submit either one of them.
+</p>
+    <p><span class="font-semibold">Method:</span> <span class="text-green-600">GET</span></p>
+    <p><span class="font-semibold">Endpoint:</span> <span class="text-blue-600">/api/findUser</span></p>
+
+    <!-- Header Section -->
+    <div>
+        <h3 class="font-semibold mb-1">Headers:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+Authorization: Bearer 6|8NPoORJOhtXdHBSsiYLLXwqNID6UY2U04aSIWlvRa5115dc2
+Content-Type: application/json
+        </pre>
+    </div>
+
+    <!-- Request Body -->
+    <div>
+        <h3 class="font-semibold mb-1">Request Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "email":"mo@gmail.com",
+    //"phone":"0500000000"
+}
+        </pre>
+    </div>
+
+    <!-- Response Body -->
+    <div>
+        <h3 class="font-semibold mb-1">Response Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "id": 1,
+    "name": "mo",
+    "email": "mo@gmail.com",
+    "email_verified_at": null,
+    "created_at": "2026-02-15T04:41:15.000000Z",
+    "updated_at": "2026-02-15T04:41:15.000000Z",
+    "role": null,
+    "phone": null
 }
         </pre>
     </div>
