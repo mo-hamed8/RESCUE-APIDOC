@@ -1,0 +1,37 @@
+<!-- Endpoint Card -->
+<div class="bg-white rounded-xl shadow p-6 space-y-4">
+    <h2 class="text-xl font-semibold">Create new search case</h2>
+    <p><span class="font-semibold">Method:</span> <span class="text-green-600">POST</span></p>
+    <p><span class="font-semibold">Endpoint:</span> <span class="text-blue-600">/api/search-case</span></p>
+
+    <!-- Header Section -->
+    <div>
+        <h3 class="font-semibold mb-1">Headers:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+Authorization: Bearer 6|8NPoORJOhtXdHBSsiYLLXwqNID6UY2U04aSIWlvRa5115dc2
+Content-Type: application/json
+        </pre>
+    </div>
+
+    <div>
+        <h3 class="font-semibold mb-1">Request Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "title":"search case x",
+    "description":"test info"
+}
+        </pre>
+    </div>
+
+    <div>
+        <h3 class="font-semibold mb-1">Response Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "success": true,
+    "message": "Search case created successfully.",
+    "data": []
+}
+        </pre>
+    </div>
+</div>
+<!-- Endpoint Card -->
