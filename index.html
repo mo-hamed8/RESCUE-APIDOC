@@ -414,6 +414,49 @@ Content-Type: application/json
             </div>
         </div>
         <!-- Endpoint Card -->
+         <!-- Endpoint Card -->
+<div class="bg-white rounded-xl shadow p-6 space-y-4">
+    <h2 class="text-xl font-semibold">Close suspicion</h2>
+    <p class="text-sm text-gray-700">
+    <b>NOTE: </b>
+    <span class="font-semibold">status</span> must be one of the predefined values: 
+    <span class="font-semibold">pending</span>, <span class="font-semibold">confirmed</span>, or <span class="font-semibold">rejected</span>.
+</p>
+    <p><span class="font-semibold">Method:</span> <span class="text-green-600">POST</span></p>
+    <p><span class="font-semibold">Endpoint:</span> <span class="text-blue-600">/api/close-suspicion</span></p>
+
+    <!-- Header Section -->
+    <div>
+        <h3 class="font-semibold mb-1">Headers:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+Authorization: Bearer YOUR_TOKEN
+Content-Type: application/json
+        </pre>
+    </div>
+
+    <!-- Request Body -->
+    <div>
+        <h3 class="font-semibold mb-1">Request Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "analysis_id": 1,
+    "status": "confirmed"
+}
+        </pre>
+    </div>
+
+    <!-- Response Body -->
+    <div>
+        <h3 class="font-semibold mb-1">Response Body:</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+{
+    "success": true,
+    "message": "status updated successfully."
+}
+        </pre>
+    </div>
+</div>
+<!-- Endpoint Card -->
     </main>
 
 </body>
